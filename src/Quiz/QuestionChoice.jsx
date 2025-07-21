@@ -7,7 +7,7 @@ export default function QuestionChoice({ choices }) {
             {choices.map((choice) => (
                 <button
                     key={choice.label}
-                    className="w-full flex items-center px-4 py-2 rounded-full border border-gray-700 text-white hover:bg-gray-800 transition focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                    className="w-full flex items-center px-4 py-2 rounded-full border border-gray-700 text-white hover:bg-gray-800 transition focus:outline-none focus:ring-2 focus:ring-white"
                 >
                     <span className="mr-3 bg-gray-700 rounded-full w-7 h-7 flex items-center justify-center font-bold">
                         {choice.label}
