@@ -1,0 +1,22 @@
+span {
+  position: absolute;
+  top: 50%;
+  left: 115%;
+  width: 34px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 8px;
+  transform-origin: -128px center;
+  transform: rotate(calc(var(--i) * 7.2deg)) translate(-50%, -50%);
+  animation: animateBlink 3s linear infinite;
+  animation-delay: calc(var(--i) * 0.06s);
+}
+
+@keyframes animateBlink {
+  0% {
+    background: rgb(0, 0, 0);
+  }
+  25% {
+    background: #dadfe4;
+  }
+}

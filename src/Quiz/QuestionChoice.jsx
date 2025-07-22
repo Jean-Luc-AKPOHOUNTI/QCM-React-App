@@ -1,4 +1,5 @@
 import '../index.css'
+import QuestionData from './QuestionData.jsx'
 
 export default function QuestionChoice({ choices, selected, onSelect }) {
     return (
@@ -13,9 +14,9 @@ export default function QuestionChoice({ choices, selected, onSelect }) {
                     // Définit la fonction onClick qui appelle onSelect avec le label du choix.
                     onClick={() => onSelect(choice.label)}
                 >
-                    <span className="mr-3 bg-gray-700 rounded-full w-7 h-7 flex items-center justify-center font-bold">
+                    <i className="mr-3 bg-gray-700 rounded-full w-7 h-7 flex items-center justify-center font-bold">
                         {choice.label}
-                    </span>
+                    </i>
                     {choice.text}
                 </button>
             ))}
